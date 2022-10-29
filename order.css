@@ -1,0 +1,74 @@
+body{
+	background-image:url(https://blog-images.pharmeasy.in/2021/01/30154330/shutterstock_525495457-1.jpg);
+    background-repeat:no-repeat;
+	background-size : cover;
+	color:white;
+}
+h1{
+	position:absolute;
+	top:6%;
+	left:10%;
+	transform:translate(-20%,-50%);
+}
+table{
+	position:absolute;
+	top:38%;
+	left:22%;
+	transform:translate(-50%,-50%);
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+td{
+	vertical-align:top;
+	padding :5px;
+	word-wrap :break-word;
+}
+#fullpage{
+	margin:150px;
+}
+
+.button {
+	position:absolute;
+	top:120%;
+	left:35%;
+	transform:translate(-50%,-50%);
+	width :50px;
+}
+.button1{
+	color:white;
+	background-color:DarkSlateGrey;
+	width:120px;
+	height:40px;
+	border-radius:3px;
+	position:absolute;
+	top:18%;
+	left:63%;
+	text-decoration:none;
+	transform:translate(-20%,-50%);
+}
+.button2{
+	color:white;
+	background-color:DarkSlateGrey;
+	width:120px;
+	height:40px;
+	border-radius:3px;
+	position:absolute;
+	top:18%;
+	left:83%;
+	text-decoration:none;
+	transform:translate(-20%,-50%);
+}
+.button3{
+	color:white;
+	background-color:DarkSlateGrey;
+	width:120px;
+	height:40px;
+	border-radius:3px;
+	position:absolute;
+	top:18%;
+	left:73%;
+	text-decoration:none;
+	transform:translate(-20%,-50%);
+}
+
+

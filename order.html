@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Coffee Shop</title>
+	<link rel="stylesheet" type="text/css" href="order.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";>
+	<script>
+	function validFirstName()
+{
+	var fname=document.getElementById("firstname").value;
+	var re1=/^[a-zA-Z\s\`\-]{2,15}$/;
+	
+	if(re1.test(fname)) {
+		document.getElementById("firstnamePrompt").style.color="green";
+		document.getElementById("firstnamePrompt").innerHTML="<strong>valid</strong>";
+		return true;
+	}
+	else {
+		document.getElementById("firstnamePrompt").style.color="Red";
+		document.getElementById("firstnamePrompt").innerHTML="<strong>Enter 2-15 Charecters</strong>";
+	
+	}
+}
+
+function validLastName()
+{
+	var lname=document.getElementById("lastname").value;
+	var re2=/^[a-zA-Z\s\`\-]{2,15}$/;
+	
+	if(re2.test(lname)) {
+		document.getElementById("lastnamePrompt").style.color="green";
+		document.getElementById("lastnamePrompt").innerHTML="<strong>valid</strong>";
+		return true;
+	}
+	else {
+		document.getElementById("lastnamePrompt").style.color="Red";
+		document.getElementById("lastnamePrompt").innerHTML="<strong>Enter 2-15 Charecters</strong>";
+	
+	}
+}
+
+function validPhoneNumber()
+{
+	var phnumber=document.getElementById("phonenumber").value;
+	var re3=/^\d{3}\d{3}\d{4}$/;
+	
+	if(re3.test(phnumber)) {
+		document.getElementById("phonenumberPrompt").style.color="green";
+		document.getElementById("phonenumberPrompt").innerHTML="<strong>valid</strong>";
+		return (true);
+	}
+	else {
+		document.getElementById("phonenumberPrompt").style.color="Red";
+		document.getElementById("phonenumberPrompt").innerHTML="<strong>Use xxxxxxxxxx</strong>";
+	    
+	}
+}
+
+</script>
+</head>
+	<form method="POST">
+<button formaction="last.html" class="button2"> Next</button>
+<button formaction="about.html" class="button1"> Back </button>
+<button formaction="#" class="button3"><i class="fa fa-shopping-cart"></i> Cart</button>
+</form>
+<body>
+	<form action="#">
+	<div id="fullpage">
+	<h1>Make an Order :</h1>
+	<table border="0">
+	
+	<tr>
+	<td class="label_col">First Name :</td>
+	<td class="input_col"><input name="firstname" id="firstname" type="text" onblur="validFirstName();"></td>
+	<td class="feedback_col" size="20"><span id="firstnamePrompt">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="label_col">Last Name :</td>
+	<td class="input_col"><input name="lastname" id="lastname" type="text" onblur="validLastName();"></td>
+	<td class="feedback_col" size="20"><span id="lastnamePrompt">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="label_col">Phone Number :</td>
+	<td class="input_col"><input name="phonenumber" id="phonenumber" type="text" onblur="validPhoneNumber();" placeholder="xxxxxxxxxx"></td>
+	<td class="feedback_col" size="20"><span id="phonenumberPrompt"></td>
+	</tr>
+	
+	<tr>
+	<td class="label_col">Gender :</td>
+	<td class="input_col"><input name="gender" id="male" type="radio">Male
+	<input name="gender" id="female" type="radio">Female</td>
+	<td class="feedback_col" size="20"><span id="genderPrompt">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="label_col">Email :</td>
+	<td class="input_col"><input name="email" id="email" type="text"></td>
+	<td class="feedback_col" size="20"><span id="emailnamePrompt">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="label_col">DOB :</td>
+	<td class="input_col"><input name="dob" id="dob" type="date"></td>
+	<td class="feedback_col" size="20"><span id="dobnamePrompt">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="label_col">Address :</td>
+	<td class="input_col"><textarea cols="20" rows="5" placeholder="current address" / required>
+    </textarea></td>
+	<td class="feedback_col" size="20"><span id="addressnamePrompt">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="label_col">Payment :</td>
+	<td class="input_col"><input name="payment" id="cash" type="radio">Cash
+	<td class="feedback_col" size="20"><span id="genderPrompt">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	<td class="button" colspan="2">
+    <!--input type="button" value="OrderNow" onclick="#"-->
+	<button formaction="last.html" class="button5"> OrderNow </button>
+	</td>
+	</tr>
+
+	
+</table>
+<span id="orderConfirm">&nbsp;</span>
+</div>
+</form>
+</body>
+</html>

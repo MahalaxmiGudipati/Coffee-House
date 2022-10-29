@@ -1,0 +1,67 @@
+body{
+	background-color:LightSlateGrey;
+	color:DarkSlateGrey;
+}
+p{
+	color:DarkSlateGrey;
+	text-align :center;
+	font-size:120%
+}
+.active1{
+	text-align :center;
+	font-size:140%
+}
+h1{
+	color:Black;
+	text-align :center;
+	font-size:200%
+}
+h2,h3{
+	color:DarkSlateGrey;
+	text-align :center;
+	font-size:160%
+}
+.button1{
+	color:white;
+	background-color:DarkSlateGrey;
+	width:120px;
+	height:40px;
+	border-radius:3px;
+	position:absolute;
+	top:18%;
+	left:13%;
+	text-decoration:none;
+	transform:translate(-20%,-50%);
+}
+.button2{
+	color:white;
+	background-color:DarkSlateGrey;
+	width:120px;
+	height:40px;
+	border-radius:3px;
+	position:absolute;
+	top:18%;
+	left:80%;
+	text-decoration:none;
+	transform:translate(-20%,-50%);
+}
+.zoom{
+	transition :transform 1.1s;
+}
+.zoom:hover{
+	transform:scale(1.1);
+}
+h3,h4,h5,h6{
+	color:DarkSlateGrey;
+	text-align :center;
+	font-size:150%
+}
+.amenties1{
+	left:15%;
+}
+.amenties2{
+	left:50%;
+}
+.amenties3{
+	left:75%;
+}

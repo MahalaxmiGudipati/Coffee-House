@@ -1,0 +1,61 @@
+body{
+	color:white;
+	background-image:url(https://www.pointbleudesign.com/wp-content/uploads/2019/09/European-Specialty-Coffee-Market-by-Pointbleu-Design-Blog.jpg);
+/*  background-image:url(https://img.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg?size=626&ext=jpg); */ 
+ /*  background-image:url(https://blog-images.pharmeasy.in/2021/01/30154330/shutterstock_525495457-1.jpg);*/
+    background-repeat:no-repeat;
+	background-size : cover;
+	box-sizing:border-box;
+}
+H1{
+	position:absolute;
+	top:25%;
+	left:20%;
+	transform:translate(-20%,-50%);
+	font-size:250%;
+}
+H2{
+	color:white;
+	position:absolute;
+	top:35%;
+	left:20%;
+	transform:translate(-20%,-50%);
+}
+.button{
+	color:white;
+	background-color:DarkSlateGrey;
+	width:120px;
+	height:40px;
+	border-radius:3px;
+	position:absolute;
+	top:50%;
+	left:25%;
+	text-decoration:none;
+	transform:translate(-20%,-50%);
+}
+.menu-bar{
+	background:none;
+	text-align:center;
+}
+.menu-bar ul{
+	display:inline-flex;
+	list-style:none;
+	color:white;
+}
+.menu-bar ul li{
+	width:120px;
+	margin:15px;
+	padding:15px;
+}
+.menu-bar ul li a{
+	text-decoration:none;
+	color:white;
+}
+.active, .menu-bar ul li:hover
+{
+	background:DarkSlateGrey;
+	border-radius:3px;
+}	
+.menu-bar .fa{
+	margin-right:8px;
+}
